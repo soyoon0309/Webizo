@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0056b3;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    background: #ffffff;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #0056b3;
+    float: right; /* 버튼을 오른쪽으로 플로팅 */
+    margin-left: 10px; /* 버튼과 제목 사이의 여백 */
+}
+
+h2 {
+    display: block; /* 블록 레벨 요소로 설정하여 버튼이 올바르게 플로팅되도록 함 */
+}
+
+.content {
+    display: none;
+    padding-top: 10px;
+}
+
+textarea {
+    width: 100%; /* 전체 너비를 사용하도록 설정 */
+    box-sizing: border-box; /* 패딩과 테두리가 너비에 포함되도록 함 */
+    border: 1px solid #ccc; /* 경계 스타일 설정 */
+    border-radius: 4px; /* 모서리 둥글게 */
+    resize: vertical; /* 세로 방향으로 크기 조절 가능 */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
