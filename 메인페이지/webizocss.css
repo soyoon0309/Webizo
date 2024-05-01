@@ -1,0 +1,103 @@
+body {
+    width: 800px;
+    height: 1300px;
+    margin: 20px auto;
+    font-family: 'Sunflower', sans-serif;
+} /*body 기본 사이즈 설정*/
+
+ul {
+    list-style: none;
+} /*모든 ul tag 불릿 제거*/
+
+a {
+    text-decoration: none;
+} /*모든 a tag 밑줄 제거*/
+
+#wrapper {
+    width: 1000px;
+    height: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr; /*가로 1:5:1*/
+    grid-template-rows: 0.5fr 2fr 2.8fr 0.1fr; 
+    /*세로 0.5:2:2.8:0.1
+    => raside는 아래를 비워두기 위해 center부분을 2칸으로 나눠 선언*/
+} /*css 그리드 레이아웃 사이즈 설정*/
+
+.boxheader {
+    margin: 10px;
+    border-radius: 3px;
+    background-color:coral;
+    grid-column: 1/4;
+} /*header css design, css grid column 1번~4번, row 기본값*/
+
+#headtitle {
+    float: left;
+    margin-left: 15px;
+    background-color: aqua;
+    padding-top: 40px;
+} /*header 내 div tag에 들어가는 id*/
+
+.navi .submenu {
+    width: 150px;
+    height: 130px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background-color: darkgoldenrod;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s; /* 효과를 부드럽게 만들기 위한 트랜지션 */
+} 
+
+.navi a:hover + .submenu, .navi .submenu:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navi {
+    float: right;
+    padding-top: 40px;
+    padding-right: 25px;
+    background-color:lightgreen;
+} /*header 내 nav tag에 들어가는 id*/
+
+.navi > ul > li {
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    padding: auto;
+    margin: 0px 10px;
+} /*header nav ul li*/
+
+.navi a:hover {
+    background-color: rgb(222, 162, 119);
+    color: black;
+} /*nav tag 내의 a tag에 커서를 올렸을 때 해당 a tag의 설정 변경값*/
+
+.laside {
+    margin: 10px;
+    border-radius: 3px;
+    background-color: bisque;
+    grid-row: 2/4;
+} /*laside의 기본 배경 설정, css grid column 기본값, css grid row 2번 ~ 4번*/
+
+.content {
+    margin: 10px;
+    border-radius: 7px;
+    grid-row: 2/4;
+    background-color: darkcyan;
+} /*section 기본값 설정, css grid column 기본값, css grid row 2번 ~ 4번*/
+
+.raside {
+    margin: 10px;
+    border-radius: 3px;
+    background-color:mediumaquamarine;
+} /*raside 기본 설정*/
+
+footer {
+    background-color:crimson;
+    margin: 10px;
+    border-radius: 3px;
+    grid-row: 4/5;
+    grid-column: 1/4;
+} /*footer 기본값 설정, css grid column 1번 ~ 4번, css grid row 4번 ~ 5번*/

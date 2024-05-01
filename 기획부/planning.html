@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="학습공동체 웨비조 동아리 운영진을 위한 웹페이지 제작 중 기획부 페이지">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웨비조 기획부 페이지</title>
+    <link rel="stylesheet" href="planningcss.css"><!--planningcss.css 파일 style 사용-->
+</head>
+<body>
+    <div id="wrapper">
+    <header class="boxheader">
+        <div id="headtitle">
+            <h1>운영진 사이트</h1>
+            <h3>기획부 페이지입니다</h3>
+        </div>
+        <nav class="navi">
+            <ul>
+                <li>
+                    <a href=""><b>기획부</b></a>
+                    <div class="submenu">
+                        <a href="#profileset">부원별 역할</a><br>
+                        <a href="#businessfile">동아리 공식 문서 관리</a><br>
+                        <a href="#planningfile">기획부 회의록 및 관련자료</a><br>
+                        <a href="#monthplan">연간 행사 계획</a><br>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><b>홍보부</b></a>
+                    <div class="submenu">
+                    </div>
+                </li>
+                <li>
+                    <a href=""><b>재무부</b></a>
+                    <div class="submenu">
+                    </div>
+                </li>
+                <li>
+                    <a href=""><b>교육인사과</b></a>
+                    <div class="submenu">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="raside">
+        <article id="rat1">
+            <h4>다음 회의 일정</h4>
+            <p>00월 00일</p>
+            <h5>회의 안건</h5>
+            <p>여기에 회의 안건이 표시됩니다</p>
+        </article>
+    </aside>
+    <aside class="laside">
+        <form action="" id="signup">
+            <div>
+                <label for="user-id">아이디</label>
+                <input type="text" id="user-id" size="12"><br>
+                <label for="user-pw">비밀번호</label>
+                <input type="password" id="user-pw" size="12"><br>
+            </div>
+            <input type="submit" value="로그인" id="user-login" size="4"> 
+            <!--input형식 = submit, button 위에 적힐 멘트 = value, button size = size-->
+            <input type="submit" value="회원가입" id="user-get" size="4">
+        </form> <!--form tag 안에 있어야 form형식으로 인정-->
+    </aside>
+    <section class="content">
+        <nav id="profileset"> 
+            <div id="profile">
+                <img id="image" src='basic_profile.jpg' alt="프로필1" width="120">
+                <p>기획부 부장 김ㅇㅇ</p>
+                <p>담당업무 1</p>
+                <p>담당업무 2</p>
+            </div>
+            <div id="profile">
+                <img id="image" src='basic_profile.jpg' alt="프로필2" width="120">
+                <p>기획부 팀원 이ㅇㅇ</p>
+                <p>담당업무 1</p>
+                <p>담당업무 2</p>
+            </div>
+            <div id="profile">
+                <img id="image" src='basic_profile.jpg' alt="프로필3" width="120">
+                <p>기획부 팀원 강ㅇㅇ</p>
+                <p>담당업무 1</p>
+                <p>담당업무 2</p>
+            </div>
+        </nav>
+        <h3>전체회의 문서</h3>
+        <div id="businessfile">
+            <p>첫 번째 파일 이거 파일 API 사용해서 진짜 파일 저장되게 할 수 없나?</p>
+            <p>두 번째 파일</p>
+        </div>
+        <h4>새로운 파일 업로드하기</h4>
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload</button>
+        <h4>현 페이지에는 일부만 보이게 하고 다른 페이지로 넘겨서 전체를 보이게 해도 좋을듯</h4>
+        <h4>기록, 정리 용도 → 가능하면 API 끌어와서 기록한 것들 워드 클라우드 이게 될까</h4><hr>
+        <h3>기획부 회의 기록</h3>
+        <div id="planningfile">
+            <p>첫 번째 파일 이거 파일 API 사용해서 진짜 파일 저장되게 할 수 없나?</p>
+            <p>두 번째 파일</p>
+        </div>
+        <h3>이번달 행사 일정</h3>
+        <div id="monthplan">
+            <p>정기 세미나 | 주제 : ~~~ </p>
+            <p>기업 방문 | AA 기업 현직자 인터뷰 00일 00시 00분 집결 장소 : ~~~~ </p>
+            <p>정기 운영진 전체 회의 | 00일 00시 00분 장소 : ~~~~ </p>
+        </div>
+    </section>
+</div>
+</body>
+</html>
