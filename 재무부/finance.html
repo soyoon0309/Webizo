@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재무부</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>재무부</h1>
+    </header>
+    <main>
+        <section class="input-section">
+            <h2>관리자의 수입 및 지출 입력</h2>
+            <form>
+                <label for="type">유형:</label>
+                <select id="type">
+                    <option value="수입">수입</option>
+                    <option value="지출">지출</option>
+                </select><br>
+                <label for="amount">금액:</label>
+                <input type="number" id="amount" required><br>
+                <label for="description">설명:</label>
+                <input type="text" id="description" required><br>
+                <button type="submit">추가</button>
+            </form>
+        </section>
+        <section class="data-section">
+            <h2>재무 내역</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>유형</th>
+                        <th>금액</th>
+                        <th>설명</th>
+                    </tr>
+                </thead>
+                <tbody id="finance-data">
+                    <!--동적으로 데이터가 추가되는 부분... (JavaScript) -->
+                </tbody>
+            </table>
+        </section>
+        <section class="graph-section">
+            <h2>재무 현황</h2>
+            <div id="finance-chart">
+                <!-- JavaScript로 그래프 같은 시각 자료 ..? -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>A 동아리</p>
+    </footer>
+</body>
+</html>
