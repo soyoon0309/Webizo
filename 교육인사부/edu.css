@@ -7,6 +7,28 @@ body {
     background-color: #f4f4f4;
 }
 
+/* header */
+
+
+.header-container {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul.main-menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+
+
 header {
     background-color: #0056b3;
     color: #ffffff;
@@ -20,9 +42,10 @@ nav ul {
     text-align: center;
 }
 
+
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -31,6 +54,40 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+
+
+nav .submenu {
+    display: none;
+    position: absolute;
+    background-color: #0074d9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+nav .submenu li {
+    display: block;
+}
+
+nav .submenu a {
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+nav .menu-item:hover .submenu {
+    display: block;
+}
+
+
+
+/* body */
 section {
     background: #ffffff;
     margin: 20px;
@@ -67,6 +124,7 @@ textarea {
 }
 
 
+/* footer */
 footer {
     text-align: center;
     padding: 10px 0;
