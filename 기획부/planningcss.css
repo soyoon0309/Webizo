@@ -2,8 +2,7 @@
 /*sunflower light 300 webfont 사용*/
 
 body {
-    width: 800px;
-    height: 1300px;
+
     margin: 20px auto;
     font-family: 'Sunflower', sans-serif;
 } /*body 기본 사이즈 설정*/
@@ -22,8 +21,7 @@ ul {
 } /*id image 설정, 좌우 마진 10px씩*/
 
 #wrapper {
-    width: 1000px;
-    height: 1300px;
+
     display: grid;
     grid-template-columns: 1fr 5fr 1fr; /*가로 1:5:1*/
     grid-template-rows: 0.5fr 2fr 2.8fr 0.1fr; 
@@ -63,11 +61,17 @@ ul {
 }
 
 .navi {
-    float: right;
-    padding-top: 40px;
-    padding-right: 25px;
+    align-content: center;
+    margin-top: 40px;
+    margin-right: 25px;
     background-color:lightgreen;
 } /*header 내 nav tag에 들어가는 id*/
+
+#allbusiness, #planbusiness, #monthplanset {
+    align-content: center;
+    margin: 40px 15px;
+    background-color: turquoise;
+}
 
 .navi > ul > li {
     float: left;
@@ -97,15 +101,15 @@ ul {
 } /*section 기본값 설정, css grid column 기본값, css grid row 2번 ~ 4번*/
 
 #profileset {
-    float: left;
+    align-content: center;
     background-color: cornflowerblue;
     margin: 0px 15px;
 }
 
 #profile {
-    float: left;
+    float:left;
     background-color: aliceblue;
-    margin: 10px 40px;
+    margin: 10px 80px;
 }
 
 .raside {

@@ -85,27 +85,31 @@
                 <p>담당업무 2</p>
             </div>
         </nav>
-        <h3>전체회의 문서</h3>
-        <div id="businessfile">
-            <p>첫 번째 파일 이거 파일 API 사용해서 진짜 파일 저장되게 할 수 없나?</p>
-            <p>두 번째 파일</p>
-        </div>
-        <h4>새로운 파일 업로드하기</h4>
-        <input type="file" id="fileInput">
-        <button onclick="uploadFile()">Upload</button>
-        <h4>현 페이지에는 일부만 보이게 하고 다른 페이지로 넘겨서 전체를 보이게 해도 좋을듯</h4>
-        <h4>기록, 정리 용도 → 가능하면 API 끌어와서 기록한 것들 워드 클라우드 이게 될까</h4><hr>
-        <h3>기획부 회의 기록</h3>
-        <div id="planningfile">
-            <p>첫 번째 파일 이거 파일 API 사용해서 진짜 파일 저장되게 할 수 없나?</p>
-            <p>두 번째 파일</p>
-        </div>
-        <h3>이번달 행사 일정</h3>
-        <div id="monthplan">
-            <p>정기 세미나 | 주제 : ~~~ </p>
-            <p>기업 방문 | AA 기업 현직자 인터뷰 00일 00시 00분 집결 장소 : ~~~~ </p>
-            <p>정기 운영진 전체 회의 | 00일 00시 00분 장소 : ~~~~ </p>
-        </div>
+        <section id="allbusiness">
+            <h3>전체회의 문서</h3>
+            <div id="businessfile">
+                <p>첫 번째 파일 이거 파일 API 사용해서 진짜 파일 저장되게 할 수 없나?</p>
+                <p>두 번째 파일</p>
+            </div>
+            <h4>새로운 파일 업로드하기</h4>
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">Upload</button>
+        </section>
+        <section id="planbusiness">
+            <h3>기획부 회의 기록</h3>
+            <div id="planningfile">
+                <p>첫 번째 파일 이거 파일 API 사용해서 진짜 파일 저장되게 할 수 없나?</p>
+                <p>두 번째 파일</p>
+            </div>
+        </section>
+        <section id="monthplanset">
+            <h3>이번달 행사 일정</h3>
+            <div id="monthplan">
+                <p>정기 세미나 | 주제 : ~~~ </p>
+                <p>기업 방문 | AA 기업 현직자 인터뷰 00일 00시 00분 집결 장소 : ~~~~ </p>
+                <p>정기 운영진 전체 회의 | 00일 00시 00분 장소 : ~~~~ </p>
+            </div>
+        </section>
     </section>
 </div>
 </body>
