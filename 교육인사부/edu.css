@@ -63,29 +63,6 @@ nav a {
 
 
 
-nav .submenu {
-    display: none;
-    position: absolute;
-    background-color: #0074d9;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    padding: 10px 0;
-}
-
-nav .submenu li {
-    display: block;
-}
-
-nav .submenu a {
-    color: #ffffff;
-    padding: 10px 15px;
-}
-
-nav .menu-item:hover .submenu {
-    display: block;
-}
-
-
 
 /* body */
 section {
