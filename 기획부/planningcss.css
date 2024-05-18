@@ -32,14 +32,13 @@ ul {
 .boxheader {
     margin: 10px;
     border-radius: 3px;
-    background-color:coral;
+    background-color:darksalmon;
     grid-column: 1/4;
 } /*header css design, css grid column 1번~4번, row 기본값*/
 
 #headtitle {
     float: left;
     margin-left: 15px;
-    background-color: aqua;
     padding-top: 40px;
 } /*header 내 div tag에 들어가는 id*/
 
@@ -48,7 +47,7 @@ ul {
     height: 130px;
     padding-top: 15px;
     padding-bottom: 5px;
-    background-color: darkgoldenrod;
+    background-color: coral;
     text-align: center;
     opacity: 0;
     visibility: hidden;
@@ -64,13 +63,12 @@ ul {
     align-content: center;
     margin-top: 40px;
     margin-right: 25px;
-    background-color:lightgreen;
 } /*header 내 nav tag에 들어가는 id*/
 
 #allbusiness, #planbusiness, #monthplanset {
     align-content: center;
     margin: 40px 15px;
-    background-color: turquoise;
+    background-color:azure;
 }
 
 .navi > ul > li {
@@ -97,13 +95,13 @@ ul {
     margin: 10px;
     border-radius: 7px;
     grid-row: 2/4;
-    background-color: darkcyan;
+    background-color:lightsalmon;
 } /*section 기본값 설정, css grid column 기본값, css grid row 2번 ~ 4번*/
 
 #profileset {
     align-content: center;
-    background-color: cornflowerblue;
-    margin: 0px 15px;
+    background-color: aliceblue;
+    margin: 15px 15px;
 }
 
 #profile {
@@ -115,11 +113,10 @@ ul {
 .raside {
     margin: 10px;
     border-radius: 3px;
-    background-color:mediumaquamarine;
+    background-color:bisque;
 } /*raside 기본 설정*/
 
 footer {
-    background-color:crimson;
     margin: 10px;
     border-radius: 3px;
     grid-row: 4/5;
